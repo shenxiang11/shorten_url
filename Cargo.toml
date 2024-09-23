@@ -1,0 +1,17 @@
+[package]
+name = "shorten_url"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.89"
+axum = "0.7.6"
+http = "1.1.0"
+nanoid = "0.4.0"
+sqlx = { version = "0.8.2", features = ["postgres", "runtime-tokio", "tls-rustls"] }
+thiserror = "1.0.64"
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
+tokio = { version = "1.40.0", features = ["rt", "rt-multi-thread" , "macros"] }
+serde = { version = "1.0.210", features = ["derive"] }
+futures = "0.3.30"

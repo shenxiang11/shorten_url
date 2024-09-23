@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:15.8-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: test.user
+      POSTGRES_PASSWORD: test.password
+      POSTGRES_DB: shorten_url
+    ports:
+      - "5432:5432"
